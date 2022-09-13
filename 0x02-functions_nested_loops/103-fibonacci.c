@@ -1,29 +1,27 @@
 #include <stdio.h>
 
 /**
- * main - entry point
+ * main - prints even valued sum of Fibonacci sequence terms
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int i;
-	unsigned long int j, k, l, m;
+	unsigned long fib1 = 0, fib2 = 1, fibsum;
+	float tot_sum;
 
-	j = 1;
-	k = 2;
-	m = 0;
-
-	for (i = 1; i <= 33; ++i)
+	while (1)
 	{
-		if (j < 4000000 && (j % 2) == 0)
-		{
-			m = m + j;
-		}
-		l = j + k;
-		j = k;
-		k = l;
+		fibsum = fib1 + fib2;
+		if (fibsum > 4000000)
+			break;
+
+		if ((fibsum % 2) == 0)
+			tot_sum += fibsum;
+
+		fib1 = fib2;
+		fib2 = fibsum;
 	}
-	printf("%lu", m);
+	printf("%.of\n", tot_sum);
 	return (0);
 }
