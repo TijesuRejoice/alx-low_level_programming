@@ -9,6 +9,10 @@
  *
  * Return: Always 0 (Success)
  */
+int main(void)
+{
+	int print_alphabet
+
 void print_alphabet(void)
 {
 	char i;
