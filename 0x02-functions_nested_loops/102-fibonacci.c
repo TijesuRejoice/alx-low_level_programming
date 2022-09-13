@@ -1,31 +1,27 @@
 #include <stdio.h>
 
 /**
- * main - entry point
+ * main - prints first 50 Fibonicci numbers,separated by comma then space
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	long int i, j, k, l;
+	int count;
+	unsigned long fib1 = 0, fib2 = 1, sum;
 
-	j = 1;
-
-	k = 2;
-
-	for (i = 1; i <= 50; i++)
+	for (count = 0; count < 50; count++)
 	{
-		if (j != 20365011074)
-		{
-			printf("%ld\n, ", j);
-		}
+		sum = fib1 + fib2;
+		printf("%lu", sum);
+
+		fib1 = fib2;
+		fib2 = sum;
+
+		if (count == 49)
+			putchar("\n");
 		else
-		{
-			printf("%ld\n", j);
-		}
-		l = j + k;
-		j = k;
-		k = l;
+			putchar(' ');
 	}
 	return (0);
 }
