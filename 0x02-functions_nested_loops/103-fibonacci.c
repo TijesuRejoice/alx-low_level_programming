@@ -18,7 +18,7 @@ int main(void)
 	{
 		if (j < 4000000 && (j % 2) == 0)
 		{
-			m = m _ j;
+			m = m + j;
 		}
 		l = j + k;
 		j = k;
