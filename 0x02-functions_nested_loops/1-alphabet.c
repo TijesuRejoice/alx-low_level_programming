@@ -1,18 +1,12 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * main - writes c to stdout
- *
- * print_alphabet - the function name
+ * print_alphabet - the function that prinits a to z in lowercase
  *
  * Description - prints the alphabet in lowecase in a new line
  *
  * Return: Always 0 (Success)
  */
-int main(void)
-{
-	int print_alphabet
-
 void print_alphabet(void)
 {
 	char i;
