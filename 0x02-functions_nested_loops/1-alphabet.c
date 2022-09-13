@@ -1,4 +1,3 @@
-#include "alphabet.h"
 #include <stdio.h>
 
 /**
