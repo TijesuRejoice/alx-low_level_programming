@@ -19,7 +19,7 @@ int main(void)
 		fib2 = sum;
 
 		if (count == 49)
-			putchar("\n");
+			putchar(',');
 		else
 			putchar(' ');
 	}
