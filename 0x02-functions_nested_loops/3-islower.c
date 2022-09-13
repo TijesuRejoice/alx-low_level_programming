@@ -7,7 +7,6 @@
  * Return: Always 0 (Success)
  */
 int _islower(int c)
-	_islower();
 {
 	if (int c > 'a' && int c < 'z')
 	{
