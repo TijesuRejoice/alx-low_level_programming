@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * main - entry point
+ * main - writes c to stdout
  *
  *
  * Description - prints the alphabet in lowercase, followed by a new line
@@ -12,12 +12,11 @@ int main(void)
 {
 	void print_alphabet(void);
 	{
-		int letter;
-
-		for (letter = 'a'; letter <= 'z'; letter++)
-		{
-			_putchar(letter);
-		}
+		char i = 'a';
+		while (i <= 'z')
+			_putchar('i');
 		_putchar('\n');
-		return (0);
+		i++;
+	}
+	return (0);
 }
