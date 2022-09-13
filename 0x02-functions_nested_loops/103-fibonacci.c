@@ -8,10 +8,11 @@
 int main(void)
 {
 	int i;
-	unsigned long int j, k, m;
+	unsigned long int j, k, l, m;
 
 	j = 1;
 	k = 2;
+	l;
 	m = 0;
 
 	for (i = 1; i <= 33; ++i)
