@@ -1,14 +1,13 @@
 #include "main.h"
 
 /**
- * _islower - Short description, single line
+ * _islower - prints the alphabets in lowercase
  * @c: contains value to be compared
- *
  * Return: Always 0 (Success)
  */
 int _islower(int c)
 {
-	if (c > 'a' && int c < 'z')
+	if (c > 'a' && c < 'z')
 	{
 		return (1);
 	}
