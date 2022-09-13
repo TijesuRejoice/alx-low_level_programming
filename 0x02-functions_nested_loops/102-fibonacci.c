@@ -20,7 +20,6 @@ int main(void)
 
 		if (count == 49)
 			putchar(' ');
-		else
 			putchar(',');
 	}
 	return (0);
