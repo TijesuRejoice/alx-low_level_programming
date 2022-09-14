@@ -7,24 +7,22 @@
  */
 int main(void)
 {
-	int i;
-	unsigned long int j, k, l, m;
+	unsigned long fib1 = 0, fib2 = 1, fibsum;
+	float tot_sum;
 
-	j = 1;
-	k = 2;
-	l;
-	m = 0;
-
-	for (i = 1; i <= 33; ++i)
+	while (1)
 	{
-		if (j < 4000000 && (j % 2) == 0)
-		{
-			m = m + j;
-		}
-		l = j + k;
-		j = k;
-		k = 1;
+		fibsum = fib1 + fib2;
+		if (fibsum > 4000000)
+			break;
+
+		if ((fibsum % 2) == 0)
+			tot_sum += fibsum;
+
+		fib1 = fib2;
+		fib2 = fibsum;
 	}
-	printf("%lu\n", m);
+	printf("%.0f\n", tot_sum);
+
 	return (0);
 }
