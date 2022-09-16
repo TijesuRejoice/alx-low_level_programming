@@ -17,6 +17,7 @@ void print_number(int n)
 	{
 		i = n;
 	}
+
 	j = i;
 	count = 1;
 
