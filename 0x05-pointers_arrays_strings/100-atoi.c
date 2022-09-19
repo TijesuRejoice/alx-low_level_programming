@@ -5,7 +5,7 @@
  * _atoi - converts a string to an integer
  * @s: the string to be converted
  *
- * Return: the integer value of the converted string
+ * Return: int value of converted string
  */
 int _atoi(char *s)
 {
@@ -13,7 +13,7 @@ int _atoi(char *s)
 	unsigned int num = 0;
 
 	do {
-		if (*s == '_')
+		if (*s == '-')
 			sign *= -1;
 
 		else if (*s >= '0' && *s <= '9')
