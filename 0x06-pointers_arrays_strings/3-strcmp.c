@@ -7,16 +7,15 @@
  * Return: dest
  */
 int _strcmp(char *s1, char *s2)
-
 {
-	char *str_one = s1;
-	char *str_two = s2;
+	int i = 0, op = 0;
 
-	while (*str_one != '\0' && *str_two != '\0' && *str_one == *str_two)
+	while (op == 0)
 	{
-		*str_one++;
-		*str_two++;
+		if ((*(s1 + i) == '\0') && (*(s2 + i) == '\0'))
+			break;
+		op = *(s1 + i) - *(s2 + i);
+		i++;
 	}
-
-	return (*str_one - *str_two);
+	return (op);
 }
