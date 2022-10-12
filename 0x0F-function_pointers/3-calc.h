@@ -2,7 +2,7 @@
 #define CALC_H
 
 #include <stdlib.h>
-#include <srdio.h>
+#include <stdio.h>
 
 /**
  * struct op - Struct op
