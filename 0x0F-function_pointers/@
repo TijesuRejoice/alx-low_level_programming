@@ -1,0 +1,14 @@
+#include "function_pointer.h"
+
+/**
+ * print_name - prints a name
+ * @name: nme to be orinted
+ * @f: function pointer
+ *
+ * Return: void
+ */
+void print_name(char *name, void (*f)(char *))
+{
+	if (name && f)
+		f(name);
+}
