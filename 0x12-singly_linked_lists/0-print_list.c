@@ -1,5 +1,7 @@
 #include "lists.h"
-
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
 /**
  * print_list - prints list.
  * @h: param list
