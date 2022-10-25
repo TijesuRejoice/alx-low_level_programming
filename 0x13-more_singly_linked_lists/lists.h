@@ -7,8 +7,7 @@
 
 /**
  * struct list_s - singly linked list
- * @str: string
- * @len: length of string
+ * @n: integer
  * @next: points to the next node
  *
  * Description: singly linked list node structure project
