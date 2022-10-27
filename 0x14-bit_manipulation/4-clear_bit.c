@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * clear_bit - sets the value of a bit to 0 at a given index
- * @n: pointer to the bit
- * @index: the index starting from 0 of the bit you want to set
+ * clear_bit - sets the value of a bit at a given index to 0
+ * @n: the pointer to the bit
+ * @index: the index to set the value at - indices start at 0
  *
- * Return: 1 if successful or -1 if error occurs
+ * Return: if error occurs, -1 otherwise, 1
  */
 int clear_bit(unsigned long int *n, unsigned int index)
 {
