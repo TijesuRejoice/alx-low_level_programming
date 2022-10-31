@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * read_textfile - reads a text file and prints it to the POSIX standard output.
+ * read_textfile - reads a text file and prints to the POSIX standard output
  * @filename: file name
  * @letters: letters to read and print
  * Return: 0 if function fails or filename is NULL
@@ -24,7 +24,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	r = read(o, buffer, letters);
 	w = write(STDOUT_FILENO, buffer, r);
 
-	if (o == -1 || r == -1 || w = -1 || w != r)
+	if (o == -1 || r == -1 || w == -1 || w != r)
 	{
 		free(buffer);
 		return (0);
